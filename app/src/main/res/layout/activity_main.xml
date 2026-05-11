@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F0F8FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HydroGoal - Calculadora"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#005A9C"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rgAtividade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <RadioButton android:id="@+id/rbSedentario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sedentário" android:checked="true"/>
+        <RadioButton android:id="@+id/rbModerado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Moderado" />
+        <RadioButton android:id="@+id/rbIntenso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Intenso" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editConsumido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Água já consumida (ml)"
+        android:inputType="number"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR META"
+        android:backgroundTint="#005A9C"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:text="Resultado aparecerá aqui." />
+
+</LinearLayout>
